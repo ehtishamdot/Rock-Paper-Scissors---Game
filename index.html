@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="/css/design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Barlow Semi Condensed', sans-serif; -->
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="scoreboard">
+        <h1 class="scoreboard__heading">
+          <img src="images/logo.svg" alt="" />
+        </h1>
+        <div class="scoreboard__score-box">
+          <span>score</span>
+          <div class="scoreboard__score-box__main-score">0 </div>
+        </div>
+      </header>
+      <div class="hands">
+        <div class="paper-btn hand ">
+          <img src="/images/Paper.png" class="paper hand-1" alt="" data-set="1" />
+        </div>
+        <div class="scissors-btn hand ">
+          <img src="/images/Scissors.png" alt=""  class="scissors hand-2" data-set="2"/>
+        </div>
+        <div class="rock-btn hand ">
+          <img src="/images/Rock.png" alt="" class="rock hand-3"  data-set="3"/>
+        </div>
+      </div>
+      <div class="picked display">
+        <div class="picked__you">
+          <span>you picked</span>
+          <img src="/images/Paper.png" class="your-img" alt="" />
+        </div>
+
+        <div class="referee">
+          <h1 class="result">Your Lose</h1>
+          <button class="playagain-btn">Play Again</button>
+        </div>
+
+        <div class="picked__house">
+          <span>the house picked</span>
+          <img src="/images/Rock.png" class="house-img" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/brain.js"></script>
+  </body>
+</html>
